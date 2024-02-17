@@ -1,0 +1,84 @@
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  .menu li a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu li.active a {
+    color: #333;
+  }
+
+  /* Thanh tiến trình kỹ năng */
+.skills-progress {
+    margin-top: 20px;
+  }
+  
+  .skills-progress .skill {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-progress .skill .name {
+    width: 150px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .skills-progress .skill .bar {
+    background-color: #ddd;
+    height: 10px;
+    width: 0%;
+  }
+  
+  .skills-progress .skill .bar-inner {
+    background-color: #000;
+    height: 100%;
+    width: 80%;
+  }
+  
+  /* Hiệu ứng hover */
+.about:hover,
+.skills:hover,
+.contact:hover,
+.portfolio:hover {
+  background-color: #fafafa;
+}
+
+.about:hover h2,
+.skills:hover h2,
+.contact:hover h2,
+.portfolio:hover h2 {
+  color: #000;
+}
+
+.portfolio li:hover a {
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 768px) {
+    .menu {
+      display: block;
+    }
+    .menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
